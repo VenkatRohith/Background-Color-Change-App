@@ -1,0 +1,20 @@
+{
+  "name": "background-change-color-app",
+  "version": "1.0.0",
+  "description": "change colors randomly based on different types of color formats(rgb, hsl, hex)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "background-change-color-app"
+  },
+  "keywords": [
+    "bg-change",
+    "Background",
+    "color"
+  ],
+  "author": "venkatrohith",
+  "license": "ISC"
+}
