@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Color Change App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="color-container" id="color-container"></div>
+      <ul class="colorFormats">
+        <li class="rgb">
+          <input
+            type="radio"
+            name="colorFormat"
+            id="rgb"
+            checked
+            onclick="handleRadioClick(this)"
+          /><label for="rgb">RGB</label>
+        </li>
+        <li class="hex">
+          <input
+            type="radio"
+            name="colorFormat"
+            id="hex"
+            onclick="handleRadioClick(this)"
+          /><label for="hex">HEX</label>
+        </li>
+        <li class="hsl">
+          <input
+            type="radio"
+            name="colorFormat"
+            id="hsl"
+            onclick="handleRadioClick(this)"
+          /><label for="hsl">HSL</label>
+        </li>
+      </ul>
+      <div class="alphaControl">
+        <input
+          type="checkbox"
+          name="alphaCntrl"
+          id="alphaCntrl"
+          onclick="handleCheckboxClick(this)"
+        /><label for="alphaCntrl">Alpha</label>
+      </div>
+      <div class="btn-wrapper">
+        <input
+          type="button"
+          value="Click me"
+          aria-label="Click to change colors"
+          title="Click to change colors"
+          class="btn"
+          id="btnClickMe"
+          onclick="handleBtnClick()"
+        />
+      </div>
+      <p id="computedValue" class="computedValue">Computed RGB: rgb(255,0,0)</p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

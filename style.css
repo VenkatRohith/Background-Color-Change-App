@@ -1,0 +1,49 @@
+body {
+  overflow: hidden;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.color-container {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  border-radius: 5%;
+  overflow: hidden;
+}
+
+.colorFormats {
+  display: flex;
+  list-style-type: none;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+input:checked + label {
+  font-weight: bold;
+}
+
+.alphaControl > input:disabled {
+  cursor: not-allowed;
+}
+
+.btn {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.computedValue {
+  padding: 0;
+  margin: 0;
+}
